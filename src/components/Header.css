@@ -1,0 +1,93 @@
+/* ===== Header ===== */
+.header {
+  background-color: var(--background);
+  padding: 1rem;
+  margin: 0; 
+  
+}
+
+/* Container interno → logo + botão menu */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+/* Logo (imagem + texto) */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-family: var(--font-main);
+  font-size: var(--text-medium);
+  font-weight: var(--font-bold);
+  color: var(--white);
+}
+
+/* Botão hamburguer */
+.menu-toggle {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+}
+
+/* Menu escondido no mobile */
+.nav-menu {
+  display: none; /* esconde no mobile */
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0; 
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-family: var(--font-main);
+  font-size: var(--text-medium);
+  color: var(--white);
+}
+/* ===== Overlay do menu ===== */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--background); /* fundo verde igual ao header */
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  z-index: 999; /* fica por cima */
+}
+
+/* Topo do menu (logo + botão fechar) */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Botão fechar */
+.menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Links do menu */
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu-nav a {
+  font-family: var(--font-main);
+  font-size: var(--text-btn);
+  font-weight: var(--font-medium);     /* semibold */
+  line-height: 2.75rem; /* garante área clicável de ~44px */
+  color: var(--white);
+  text-decoration: none;
+}

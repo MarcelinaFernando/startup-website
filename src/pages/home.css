@@ -1,0 +1,78 @@
+/* ========== HERO (mobile first) ========== */
+.hero {
+  background-color: var(--background);
+  color: var(--white);
+  /* spacing */
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* tudo alinhado à esquerda */
+  gap: 1rem;
+  margin-top:  -0.0625rem;
+}
+
+/* caixa que alinha imagem + texto */
+.hero-container {
+  width: 100%;
+  max-width: 26rem; /* controla largura máxima da caixa */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* dentro da caixa, tudo à esquerda */
+  gap: 1rem;
+}
+
+/* hero image on top */
+.hero-image {
+  width: 100%; /* ocupa toda a largura da caixa */
+}
+.hero-image img {
+  width: 100%; /* imagem segue a largura da caixa */
+  height: auto;
+}
+
+/* subtitle */
+.hero-subtitle {
+  font-family: var(--font-main);
+  font-size: var(--text-medium);
+  font-weight: var(--font-bold);
+  text-transform: var(--uppercase);
+  letter-spacing: var(--letter-spacing-uppercase);
+  margin-top: 0.5rem;
+  
+}
+
+/* title */
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-large);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-default);
+  letter-spacing: var(letter-spacing-normal);
+  max-width: 22rem;
+}
+
+/* description */
+.hero-text {
+  font-family: var(--font-main);
+  font-size: var(--text-small);
+   line-height: var(--line-height-default);
+  color: var(--white-75);
+  max-width: 26rem;
+}
+
+/* CTA button */
+.hero-btn {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--font-main);          
+  font-weight: var(--font-regular);      
+  font-size: var(--text-btn);              
+  line-height: var(--line-height-default); 
+  letter-spacing: var(--letter-spacing-normal);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  min-width: 10rem;         
+  border-radius: 0.3rem;
+  padding: 0.8rem 1.2rem;
+  margin-top: 0.2rem;
+}
