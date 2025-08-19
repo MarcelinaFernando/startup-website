@@ -1,0 +1,14 @@
+/* button */
+.partners-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: var(--btn-dark-bg);
+  font-family: var(--font-main);
+  font-weight: var(--font-regular);
+  font-size: var(--text-btn);
+  color: var(--white);
+  line-height: var(--line-height-default);
+  letter-spacing: var(--letter-spacing-normal);
+  border: none;
+  border-radius: 0.3rem;
+}

@@ -6,33 +6,33 @@
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* tudo alinhado à esquerda */
+  align-items: flex-start; 
   gap: 1rem;
   margin-top:  -0.0625rem;
 }
 
-/* caixa que alinha imagem + texto */
 .hero-container {
   width: 100%;
-  max-width: 26rem; /* controla largura máxima da caixa */
+  max-width: 26rem; 
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* dentro da caixa, tudo à esquerda */
+  align-items: flex-start; 
   gap: 1rem;
 }
 
 /* hero image on top */
 .hero-image {
-  width: 100%; /* ocupa toda a largura da caixa */
+  width: 100%; 
 }
 .hero-image img {
-  width: 100%; /* imagem segue a largura da caixa */
+  width: 100%; 
   height: auto;
 }
 
 /* subtitle */
 .hero-subtitle {
   font-family: var(--font-main);
+  color: var(--white);
   font-size: var(--text-medium);
   font-weight: var(--font-bold);
   text-transform: var(--uppercase);

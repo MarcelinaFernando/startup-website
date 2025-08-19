@@ -1,0 +1,38 @@
+/* ===== PARTNERS SECTION CSS ===== */
+.partners {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.partners-subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.partners-title {
+  margin-bottom: 0.75rem;
+}
+
+.partners-text {
+  margin: 0 auto 2rem;
+}
+
+.last-line {
+  display: block;     
+  margin-top: 0.625rem;
+}
+
+/* Logos */
+.partners-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.partners-logos img {
+  max-width: 150px;
+  height: auto;
+}

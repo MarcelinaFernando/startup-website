@@ -5,12 +5,57 @@
   box-sizing: border-box;
 }
 
+/* ===== TIPOGRAFIA GLOBAL ===== */
+
+p {
+  font-family: var(--font-main); /* Work Sans */
+  font-weight: var(--font-regular); /* 400 */
+  font-size: 0.9375rem; /* 15px convertido p/ rem */
+  line-height: var(--line-height-default); /* 125% */
+  letter-spacing: var(--letter-spacing-normal); /* 0 */
+  color: var(--black-50); /* cor nova que adicionámos */
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-family: var(--font-heading); /* Crimson Text */
+  font-weight: var(--font-bold);    /* 700 */
+  font-size: 1.5rem; /* 24px */
+  line-height: var(--line-height-default); /* 125% */
+  letter-spacing: var(--letter-spacing-normal); /* 0 */
+  text-align: center;
+  color: var(--black);
+}
+
+h3 {
+  font-family: var(--font-main); /* Work Sans */
+  font-weight: var(--font-bold); /* 700 */
+  font-size: 1rem; /* 16px */
+  line-height: var(--line-height-default); /* 125% */
+  letter-spacing: var(--letter-spacing-wide); /* 5px */
+  text-align: center;
+  text-transform: var(--uppercase);
+  color: var(--background);
+}
+
+h4 {
+  font-family: var(--font-main); /* Work Sans */
+  font-weight: var(--font-regular); /* 400 */
+  font-size: 1.25rem; /* 20px */
+  line-height: var(--line-height-default); /* 125% */
+  letter-spacing: var(--letter-spacing-normal); /* 0 */
+  text-align: center;
+  color: var(--black);
+}
+
 :root {
   /* ===== CORES ===== */
   --background: #74C69D;
   --white: #ffffff;
   --white-75: rgba(255, 255, 255, 0.75);
    --black: #000000; 
+   --black-50: #21252980;
+   --btn-dark-bg: #212529;
 
   /* ===== FONTES ===== */
   --font-main: 'Work Sans', sans-serif;
@@ -31,7 +76,8 @@
   --line-height-default: 125%;
 
   /* ===== LETTER SPACING ===== */
-  --letter-spacing-uppercase: 0.5rem.;
+  --letter-spacing-uppercase: 0.5rem;
+  --letter-spacing-wide: 0.3125rem;
   --letter-spacing-normal: 0;
 
   /* ===== TEXT TRANSFORM ===== */

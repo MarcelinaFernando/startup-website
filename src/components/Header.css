@@ -87,7 +87,7 @@
   font-family: var(--font-main);
   font-size: var(--text-btn);
   font-weight: var(--font-medium);     /* semibold */
-  line-height: 2.75rem; /* garante área clicável de ~44px */
+  line-height: 2.75rem; 
   color: var(--white);
   text-decoration: none;
 }

@@ -1,0 +1,29 @@
+/*SECTION INFO-CARD*/
+.info-card {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+  background-color: var(--white);
+}
+
+/* ILLUSTRATION */
+.info-card_image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONTECT*/
+.info-card_content h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.info-card_content p {
+  text-align: left;
+}
+.info-card button {
+  align-self: flex-start;
+  margin-top: -1.2rem;
+}
