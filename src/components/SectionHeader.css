@@ -1,0 +1,22 @@
+/* SECTION HEADER*/
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  margin-bottom: 0.75rem;
+}
+
+.section-description {
+  margin: 0 auto 2rem;
+}
+
+.section-description .last-line {
+  display: block;
+  margin-top: 0.625rem;
+}

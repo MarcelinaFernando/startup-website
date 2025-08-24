@@ -1,8 +1,9 @@
 // src/components/Partners.jsx
 import "./Partners.css";
+import SectionHeader from "./SectionHeader";
 import Button from "./Button"; 
 
-//import the logos
+// import the logos
 import googleLogo from "../assets/icons/google.svg";
 import microsoftLogo from "../assets/icons/microsoft.svg";
 import airbnbLogo from "../assets/icons/airbnb.svg";
@@ -12,13 +13,20 @@ import spotifyLogo from "../assets/icons/spotify.svg";
 export default function Partners() {
   return (
     <section className="partners">
-      <h3 className="partners-subtitle">PARTNERS</h3>
-      <h2 className="partners-title">Lorem Ipsum Dolor</h2>
-      <h4 className="partners-text">
-  Lorem ipsum, dolor sit amet <br />
-  consectetur <br />
-  <span className="last-line">adipisicing elit.</span>
-</h4>
+      {/* Reusable Header */}
+      <SectionHeader
+        subtitle="PARTNERS"
+        title="Lorem Ipsum Dolor"
+        description={
+          <>
+            Lorem ipsum, dolor sit amet <br />
+            consectetur <br />
+            <span className="last-line">adipisicing elit.</span>
+          </>
+        }
+      />
+
+      {/* Logos */}
       <div className="partners-logos">
         <img src={googleLogo} alt="Google logo" />
         <img src={microsoftLogo} alt="Microsoft logo" />
@@ -27,7 +35,7 @@ export default function Partners() {
         <img src={spotifyLogo} alt="Spotify logo" />
       </div>
 
-      {/*  Reusable button */}
+      {/*Reusable Button */}
       <Button label="Learn More" />
     </section>
   );
