@@ -1,5 +1,4 @@
 // src/sections/TeamSection.jsx
-import React from "react";
 import TeamCard from "./TeamCard";
 import Button from "./Button"; 
 import "./TeamSection.css";

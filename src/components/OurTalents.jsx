@@ -1,5 +1,4 @@
 // src/sections/OurTalents.jsx
-import React from "react";
 import SectionHeader from "../components/SectionHeader";
 
 export default function OurTalents() {

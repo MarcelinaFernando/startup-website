@@ -1,5 +1,4 @@
 // src/components/SectionHeader.jsx
-import React from "react";
 import "./SectionHeader.css";
 
 export default function SectionHeader({ subtitle, title, description }) {

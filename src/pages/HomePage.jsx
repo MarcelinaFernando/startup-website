@@ -6,7 +6,7 @@ import illustration1 from "../assets/images/illustration1.svg";
 import illustration2 from "../assets/images/illustration2.svg";
 import OurTalents from "../components/OurTalents"; 
 import TeamSection from "../components/TeamSection";
-// import Footer from "../components/Footer"; // caso tenha um footer
+import Footer from "../components/Footer";
 
 export default function HomePage() {
   return (
@@ -36,9 +36,8 @@ export default function HomePage() {
 
       </main>
       
-
       {/*FOOTER*/}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
