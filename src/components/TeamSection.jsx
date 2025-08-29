@@ -29,7 +29,15 @@ export default function TeamSection() {
         ))}
       </div>
 {/*Reusable Button */}
-      <Button label="Learn More" />
+<div className="team-cta">
+  <div className="btn-mobile">
+    <Button label="Learn More" />
+  </div>
+
+  <div className="btn-desktop">
+    <Button label="View Team" />
+  </div>
+</div>
     </section>
   );
 }

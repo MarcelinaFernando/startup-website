@@ -26,3 +26,93 @@
 .info-card button {
   align-self: flex-start;
 }
+
+/* ===== Info Cards (iPads) ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .info-card {
+    display: flex;
+    flex-direction: row; /* imagem esquerda + texto direita */
+    align-items: center; 
+    justify-content: space-between;
+    gap: 2rem;                 /* menor que desktop */
+    max-width: 900px;          /* largura mais contida */
+    margin: 0 auto; 
+    padding: 3rem 2rem;        /* menos espaçamento que desktop */
+  }
+
+  /* inverter imagem na segunda seção */
+  .info-card.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .info-card_image {
+    flex: 1;
+  }
+
+  .info-card_image img {
+    width: 100%;
+    max-width: 400px;   /* menor que desktop */
+    height: auto;
+  }
+
+  .info-card_content {
+    flex: 1;
+  }
+
+  .info-card_content h2 {
+    font-size: 2rem;  /* menor que desktop */
+    font-weight: var(--font-bold);
+    margin-bottom: 1rem;
+  }
+
+  .info-card_content p {
+    font-size: 0.95rem; 
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+/*Desktop adjustments*/
+@media (min-width: 1024px) {
+  .info-card {
+    display: flex;
+    flex-direction: row; /* image left + text right */
+    align-items: center; 
+    justify-content: space-between;
+    gap: 4rem; 
+    max-width: 1158px;
+    margin: 0 auto; 
+    padding: 4rem 2rem;
+  }
+
+  /* invert the image in the second section */
+  .info-card.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .info-card_image {
+    flex: 1;
+  }
+
+  .info-card_image img {
+    width: 100%;
+    max-width: 500px; 
+    height: auto;
+  }
+
+  .info-card_content {
+    flex: 1;
+  }
+
+  .info-card_content h2 {
+    font-size: 2.5rem; /* 40px */
+    font-weight: var(--font-bold);
+    margin-bottom: 1.5rem;
+  }
+
+  .info-card_content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+}

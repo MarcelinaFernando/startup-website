@@ -2,9 +2,9 @@
 import "./InfoCard.css";
 import Button from "./Button";
 
-export default function InfoCard({ imageSrc }) {
+export default function InfoCard({ imageSrc, reverse = false }) {
   return (
-    <section className="info-card">
+    <section className={`info-card ${reverse ? "reverse" : ""}`}>
       {/* ILLUSTRATION */}
       <div className="info-card_image">
         <img src={imageSrc} alt="Illustration" />

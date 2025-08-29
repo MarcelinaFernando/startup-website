@@ -1,4 +1,4 @@
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 .footer {
   display: flex;
   flex-direction: column;
@@ -15,4 +15,58 @@
 
 .footer-text {
   color: var(--white);
+}
+
+/* FOOTER (iPads) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    flex-direction: row;              
+    justify-content: space-between;   
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;         
+    margin: 0 auto;
+    min-height: 100px;            
+    padding: 2rem 4rem;              
+  }
+
+  .footer-icons {
+    max-width: 200px;  
+    display: block;
+  }
+
+  .footer-text {
+    text-align: right;
+    line-height: 1.2;
+    margin: 0;
+    font-size: 0.95rem; 
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+      width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 125px; 
+  padding: 2rem 10rem; 
+  }
+
+  .footer-icons {
+    max-width: 300px; 
+    display: block;
+  }
+
+  .footer-text {
+    text-align: right;
+    line-height: 1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
 }

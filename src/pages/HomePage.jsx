@@ -17,7 +17,7 @@ export default function HomePage() {
       {/*MAIN CONTENT*/}
       <main>
         {/*HERO SECTION*/}
-        <Hero />
+        <Hero reverse />
 
         {/*PARTNERS SECTION*/}
         <Partners/>
@@ -26,9 +26,9 @@ export default function HomePage() {
         <InfoCard imageSrc={illustration1} />
 
         {/* INFO-CARD SECTION 2 */}
-        <InfoCard imageSrc={illustration2} />
+        <InfoCard imageSrc={illustration2} reverse />
 
-         {/* OURTALENTS SECTION*/}
+        {/* OURTALENTS SECTION*/}
         <OurTalents />
 
         {/*  TEAM SECTION  */}

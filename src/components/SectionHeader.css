@@ -16,3 +16,41 @@
   display: block;
   margin-top: 0.625rem;
 }
+
+/* iPads  */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section-description br {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 2rem; 
+    font-weight: var(--font-bold); 
+  }
+
+  .section-description {
+    max-width: 500px; 
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.95rem; 
+  }
+}
+
+
+/*DESKTOP  */
+@media (min-width: 1024px) {
+  .section-description br {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 2.5rem; /* 40px */
+    font-weight: var(--font-bold); 
+}
+
+  .section-description {
+    max-width: 600px; 
+    margin: 0 auto;
+    text-align: center;
+  }
+}

@@ -1,4 +1,4 @@
-/* ===== Header ===== */
+/*Header */
 .header {
   background-color: var(--background);
   padding: 1rem;
@@ -40,6 +40,12 @@
   gap: 1rem;
   margin: 0; 
 }
+/* Hide desktop nav on mobile */
+
+.desktop-nav {
+  display: none;
+}
+
 
 .nav-menu a {
   text-decoration: none;
@@ -47,7 +53,7 @@
   font-size: var(--text-medium);
   color: var(--white);
 }
-/* ===== Overlay do menu ===== */
+/*Overlay do menu  */
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -90,4 +96,100 @@
   line-height: 2.75rem; 
   color: var(--white);
   text-decoration: none;
+}
+
+/* iPads (>=768px e <1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .header {
+    display: flex;
+    justify-content: center; 
+    padding-top: 1.5rem; 
+  }
+
+  .logo img {
+    width: 150px; 
+    height: auto;  
+  }
+
+  .header-container {
+    max-width: 60rem;  
+    width: 100%;          
+    padding: 0 2rem;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+/* Hide hamburger button */
+  .menu-toggle {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    gap: 1.5rem; 
+  }
+
+  .desktop-nav a {
+    font-size: 0.95rem; 
+    font-weight: var(--font-regular);
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .desktop-nav a:hover {
+    color: var(--primary);
+  }
+
+  .menu-overlay {
+    display: none;
+  }
+}
+
+/*Desktop (>=1024px) */
+@media (min-width: 1024px) {
+
+.header {
+    display: flex;
+    justify-content: center; 
+    padding-top: 2.1875rem; 
+  }
+   .logo img {
+    width: 180px;   
+    height: auto;  
+  }
+
+  .header-container {
+    max-width: 73.4375rem; 
+    width: 100%;          
+    padding: 0 3rem;      
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* Hide hamburger button */
+  .menu-toggle {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .desktop-nav a {
+    font-size: var(--text-btn);
+    font-weight: var(--font-regular);
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .desktop-nav a:hover {
+    color: var(--primary);
+  }
+
+  .menu-overlay {
+    display: none;
+  }
 }
