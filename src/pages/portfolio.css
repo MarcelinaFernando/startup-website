@@ -1,0 +1,17 @@
+/* src/pages/Portfolio.css */
+.portfolio-page .section-header {
+  margin-top: 2rem;
+}
+
+.portfolio-button {
+  text-align: center;
+  margin: 1rem 0 2rem;
+}
+
+@media (min-width: 1024px) {
+  
+  .portfolio-button {
+  text-align: center;
+  margin: 1rem 0 4rem 0;
+}
+}

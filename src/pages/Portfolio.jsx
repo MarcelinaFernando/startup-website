@@ -1,10 +1,23 @@
+import "./Portfolio.css";
 import PortfolioHeaderSection from "../components/PortfolioHeaderSection";
+import PortfolioGallery from "../components/PortfolioGallery";
+import Button from "../components/Button"; 
 
 export default function Portfolio() {
   return (
-    <main>
+    <main className="portfolio-page">
+
+      {/* seção de cabeçalho*/}
+      
       <PortfolioHeaderSection />
-      {/* aqui depois entram as imagens do portfolio */}
+       {/*  galeria */}
+       <PortfolioGallery />
+
+       
+       {/*Reusable Button */}
+      <div className="portfolio-button">
+        <Button label="Learn More" />
+      </div>
     </main>
   );
 }
