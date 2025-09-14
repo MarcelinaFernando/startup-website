@@ -15,7 +15,7 @@ The website demonstrates a modular structure with dynamic content rendering and 
 ---
 
 ## 🔗 Live Demo
-👉 [Click here to view the site](#)  
+👉 [Click here to view the site](https://startup-website-kp7x.onrender.com)  
 
 ## 🎥 Demo Video
 🎬 [Watch the video on Loom](https://www.loom.com/share/1e3efbdd36de4637b834be4db3fb77cb?sid=6c2a41df-f87b-4a13-a05a-78dc9612a657)
