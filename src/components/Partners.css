@@ -1,0 +1,67 @@
+/* PARTNERS SECTION CSS */
+.partners {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background-color: var(--white);
+}
+
+/* Logos */
+.partners-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.partners-logos img {
+  max-width: 150px;
+  height: auto;
+}
+
+
+/* Partners Section (iPads) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .partners {
+    max-width: 100%;      
+    margin: 0 auto;    
+    padding: 2rem 2rem;  
+  }
+
+  .partners-logos {
+    display: flex;
+    flex-direction: row;     
+    justify-content: center;  
+    align-items: center;
+    gap: 1.5rem;              
+    margin: 2rem auto;
+    flex-wrap: nowrap;      
+  }
+
+  .partners-logos img {
+    max-width: 120px;   
+    width: 100%;       
+    height: auto;
+  }
+}
+
+
+/* Desktop Version */
+@media (min-width: 1024px) {
+  .partners {
+    max-width: 1176px;   
+    margin: 0 auto;    
+    padding: 3rem 3rem;   
+  }
+
+  .partners-logos {
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+    gap: 4.25rem; /* 68px  */
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
