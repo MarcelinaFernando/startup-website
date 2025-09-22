@@ -35,7 +35,7 @@
 }
 
   .plans-container {
-    flex-direction: row;      /
+    flex-direction: row;      
     justify-content: center;  
     align-items: stretch;     
     max-width: 1100px;
