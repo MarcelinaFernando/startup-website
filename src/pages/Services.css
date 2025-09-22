@@ -25,6 +25,28 @@
   box-sizing: border-box;
 }
 
+/*  tablet (768px to 1023px)  */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+   .plans-section {
+  padding: 2rem 0;
+}
+  .plans-container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 4rem 2rem; 
+    max-width: 1100px; 
+    margin: 0 auto;    
+    justify-content: center; 
+    padding: 0 2rem;
+  }
+
+  .plans-container .plan-card {
+    max-width: 20rem;  
+    margin: 0 auto; 
+  }
+}
 
 /* desktop */
 @media (min-width: 1024px) {
