@@ -1,0 +1,58 @@
+.contact-page .section-title {
+  margin-top: 2rem;
+}
+
+/* Map container */
+.contact-map {
+  padding: 0 1rem;
+}
+
+/* Map responsive */
+.contact-map iframe {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Form section */
+.contact-form-section {
+  padding: 0 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;        
+}
+/* Labels inside the form */
+.contact-form .section-description {
+  text-align: left;
+}
+
+/* Text fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #aaaaaa;
+  border-radius: 6px;
+  background-color: #EEEEEE;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #333;
+}
+
+/* Remove resizing on mobile */
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .btn { 
+margin-top: 1rem; 
+margin-bottom: 4rem; 
+}
