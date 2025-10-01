@@ -1,4 +1,5 @@
 // src/pages/Contact.jsx
+import { motion } from "framer-motion";
 import { useState } from "react";
 import "./Contact.css";
 import SectionHeader from "../components/SectionHeader";
