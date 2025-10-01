@@ -8,9 +8,8 @@ The project follows a component-based architecture and dynamic rendering using *
 ## Introduction
 
 This project was developed as part of **Module 3 of the ElevateHer program**.  
-The goal was to build a responsive website with **Home** and **Portfolio** working in the first version, using reusable components, props, and **React Router** for navigation.
-
-The website demonstrates a modular structure with dynamic content rendering and responsive design for both mobile and desktop devices.
+The first version included only the **Home** and **Portfolio** pages.  
+In this **second version**, new pages and animations were added to improve usability and interactivity.
 
 ---
 
@@ -22,13 +21,21 @@ The website demonstrates a modular structure with dynamic content rendering and 
 
 ---
 
-## Features
-
+## 📌 Version 1 – Features
 - Responsive layout for mobile and desktop  
 - Reusable Header and Footer  
 - Dynamic content via props  
 - Functional navigation using React Router  
 - Clean and organized layout with CSS  
+
+---
+
+## 📌 Version 2 – New Features
+- **Services Page** with animated cards using Framer Motion  
+- **Contact Page** with embedded Google Maps and animated contact form  
+- **Form validation and controlled components** using React state  
+- **Improved responsiveness** across all sections  
+- **Scroll-triggered animations** for a modern user experience  
 
 ---
 
@@ -38,6 +45,7 @@ The website demonstrates a modular structure with dynamic content rendering and 
 - **Vite** – Fast development and build tool  
 - **CSS3** – Responsive styling with a mobile-first approach  
 - **React Router** – Page-to-page navigation  
+- **Framer Motion** – Smooth animations and transitions  
 - **Git & GitHub** – Version control  
 - **Figma** – Design interpretation and recreation  
 
