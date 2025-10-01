@@ -68,13 +68,16 @@ export default function Contact() {
     </section>
 
 
-
- {/* Form */}
-
+{/* Form */}
 <section className="contact-form-section" aria-label="Contact Form">
-
-  <form className="contact-form" onSubmit={handleSubmit}>
-
+  <motion.form
+    className="contact-form"
+    onSubmit={handleSubmit}
+    initial={{ opacity: 0, y: 50 }}          
+    whileInView={{ opacity: 1, y: 0 }}       
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    viewport={{ once: true, amount: 0.2 }} 
+  >
     <label htmlFor="name" className="section-description">Name</label>
     <input
       id="name"
@@ -103,13 +106,12 @@ export default function Contact() {
       onChange={handleChange}
       required
     />
-    
-        {/* Reusable Button */}
-        <Button type="submit" label="Submit" className="btn-primary" />
-  </form>
-</section>
 
+    {/* Reusable Button */}
+    <Button type="submit" label="Submit" className="btn-primary" />
+  </motion.form>
+</section>
 </div>
-    </main>
+</main>
   );
 }
