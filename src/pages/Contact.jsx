@@ -50,6 +50,8 @@ export default function Contact() {
         }
       />
  
+
+ <div className="contact-content">
   {/* Map section */}
       <section className="contact-map">
     <iframe
@@ -64,7 +66,10 @@ export default function Contact() {
   ></iframe>
     </section>
 
+
+
  {/* Form */}
+
 <section className="contact-form-section" aria-label="Contact Form">
 
   <form className="contact-form" onSubmit={handleSubmit}>
@@ -102,6 +107,8 @@ export default function Contact() {
         <Button type="submit" label="Submit" className="btn-primary" />
   </form>
 </section>
+
+</div>
     </main>
   );
 }
