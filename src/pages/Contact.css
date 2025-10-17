@@ -1,0 +1,147 @@
+.contact-page .section-title {
+  margin-top: 2rem;
+}
+
+.contact-page .contact-content {
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Map container */
+.contact-map {
+  padding: 0 1rem;
+}
+
+/* Map responsive */
+.contact-map iframe {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Form section */
+.contact-form-section {
+  padding: 0 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;        
+}
+/* Labels inside the form */
+.contact-form .section-description {
+  text-align: left;
+}
+
+/* Text fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #aaaaaa;
+  border-radius: 6px;
+  background-color: #EEEEEE;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #333;
+}
+
+/* Remove resizing on mobile */
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .btn { 
+margin-top: 1rem; 
+margin-bottom: 4rem; 
+}
+
+/* Tablet (iPad: 768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-page .contact-content {
+    display: flex;
+    flex-direction: column; 
+    max-width: 90%;         
+    margin: 0 auto;
+    gap: 2rem;              
+    padding: 1.5rem 0;
+  }
+
+  .contact-form-section,
+  .contact-map {
+    flex: none; 
+    width: 100%; 
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form .btn-primary {
+    width: 100%;       
+    margin: 0;        
+    text-align: left; 
+  }
+
+  .contact-form .btn{
+    width: 100%;
+    display: block;
+    align-self: stretch;
+    box-sizing: border-box;
+  }
+}
+
+/* DESKTOP (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .contact-page .contact-content {
+    display: flex;
+    flex-direction: row; 
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center; 
+    padding: 2rem 0;
+  }
+
+  .contact-form-section {
+    order: 1; 
+    flex: 1;
+  }
+
+  .contact-map {
+    order: 2; 
+    flex: 1;
+  }
+
+  /* Form Alignment */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left; 
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form .btn-primary {
+    width: 100%;       
+    margin: 0;        
+    text-align: left; 
+  }
+
+  .contact-map iframe {
+    height: 400px;
+    margin-bottom: 2rem;
+  }
+ .contact-form .btn{
+    width: 100%;
+    display: block;
+    align-self: stretch;
+    box-sizing: border-box;
+  }
+}
